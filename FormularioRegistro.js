@@ -9,7 +9,7 @@ function submitForm(){
         fechaDeNacimiento: fechaDeNacimiento
     };
 
-    fetch("https://jsonplaceholder.typicode.com/users", {
+    fetch('https://jsonplaceholder.typicode.com/users', {
         method: 'POST',
         headers:{
             'Content-Type': "application/json"
