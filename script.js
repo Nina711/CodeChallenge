@@ -1,7 +1,7 @@
 function submitForm(){
-    const nombre = document.getElementById("fname").value;
-    const apellido = document.getElementById("lname").value;
-    const fechaDeNacimiento = document.getElementById("bday").value;
+    const nombre = document.getElementById('fname').value;
+    const apellido = document.getElementById('lname').value;
+    const fechaDeNacimiento = document.getElementById('bday').value;
 
     const formData = {
         nombre: nombre,
@@ -12,7 +12,7 @@ function submitForm(){
     fetch('https://jsonplaceholder.typicode.com/users', {
         method: 'POST',
         headers:{
-            'Content-Type': "application/json"
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
