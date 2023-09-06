@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Formulario de Registro</title></head>
+    <head>
+        <title>Formulario de Registro</title>
+    </head>
     <body>
-        <head> Formulario de registro</head>
-        <form>
+        <form id="register">
             <label for="fname">Nombre:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Apellido:</label><br>
             <input type="text" id="lname" name="lname"><br>
             <label for="bday">Fecha de nacimiento:</label><br>
-            <input type="date" id="bday">
-            <input type="submit" value="submit" onclick="submitForm()">
+            <input type="date" id="bday"><br><br>
+            <button type="button" onclick="submitForm()">Enviar</button>
         </form>
+        
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,12 +1,12 @@
 function submitForm(){
-    const nombre = document.getElementById('fname').value;
-    const apellido = document.getElementById('lname').value;
-    const fechaDeNacimiento = document.getElementById('bday').value;
+    const fname = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const fechaNacimiento = document.getElementById('bday').value;
 
     const formData = {
-        nombre: nombre,
-        apellido: apellido,
-        fechaDeNacimiento: fechaDeNacimiento
+        nombre: fname,
+        apellido: lname,
+        fechaDeNacimiento: fechaNacimiento
     };
 
     fetch('https://jsonplaceholder.typicode.com/users', {
@@ -17,7 +17,7 @@ function submitForm(){
         body: JSON.stringify(formData)
     })
 
-    .then (Response => Response.json())
+    .then (response => response.json())
     .then(data => {
         console.log(data);
     })
